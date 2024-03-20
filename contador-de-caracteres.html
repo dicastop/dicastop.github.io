@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3505973440385868"
+    crossorigin="anonymous"></script>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="google-adsense-account" content="ca-pub-3505973440385868">
+        <meta name="robots" content="noindex, nofollow, noimageindex, noarchive, nosnippet">
+        <meta name="description" content="Contador de caracteres.">
+        <meta name="keywords" content="Contador, Caracteres, Texto, Contar">
+        <link rel="icon" type="image/png" href="web-development.png">
+        <title>Contador de caracteres</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+ 
+</head>
+
+<body>
+
+  <header>
+    <div class="container-fluid">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#"><img style="width: 45px;" src="web-development.png" alt="Logo"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Alternar navegação">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item"><a style="color: #000;" class="nav-link" href="/">🏠 Início</a></li>
+            <li class="nav-item"><a style="color: #000;" href="https://copiares.com" title="copiar" class="nav-link" >📒 Blog</a></li>
+            <li class="nav-item"><a style="color: #000;"  href="/sobre.html" class="nav-link popup-link" data-popup="#aboutPopup">💡 Sobre nós</a></li>
+            <li class="nav-item"><a style="color: #000;" href="/contato.html" class="nav-link popup-link" data-popup="#contactPopup">📞 Contate-nos</a></li>
+            <li class="nav-item"><a style="color: #000;" href="/politica-de-privacidade.html" class="nav-link popup-link" data-popup="#pagesPopup">📚 Política de privacidade</a></li>
+            <li class="nav-item"><a style="color: #000;" href="/disclaimer.html" class="nav-link popup-link" data-popup="#toolsPopup">🛠️ Aviso legal</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+
+  <main>
+    <div class="container">
+      <div class="custom-container">
+        <div class="custom-content">
+          <h1>Contador de Caracteres, Palavras e Linhas</h1>
+          <textarea id="text" rows="5" placeholder="Digite o texto aqui"></textarea>
+          <br>
+          <button onclick="count()">Contar</button>
+          <br>
+          <p><strong>Contagem:</strong></p>
+          <p>Caracteres: <span id="charCount">0</span></p>
+          <p>Palavras: <span id="wordCount">0</span></p>
+          <p>Linhas: <span id="lineCount">0</span></p>
+        </div>
+      </div>
+      
+    <br>
+    <article class="container">
+        <center><h2>Descrição do Contador de Caracteres, Palavras e Linhas</h2></center>
+    
+      
+        <p>O Contador de Caracteres, Palavras e Linhas é uma ferramenta útil que permite aos usuários analisar rapidamente o conteúdo de um texto digitado. Com este contador, você pode ver o número total de caracteres, palavras e linhas presentes no texto.</p>
+        <p>Recursos Principais:</p>
+        <ul>
+          <li><strong>Contagem de Caracteres:</strong> Este contador exibe o número total de caracteres no texto, incluindo espaços e pontuações.</li>
+          <li><strong>Contagem de Palavras:</strong> Além dos caracteres, ele também conta o número de palavras no texto, identificando espaços como delimitadores.</li>
+          <li><strong>Contagem de Linhas:</strong> O contador também rastreia o número de linhas no texto, considerando quebras de linha como separadores.</li>
+        </ul>
+        <p>Use o Contador de Caracteres, Palavras e Linhas para analisar a estrutura e o tamanho do texto com facilidade e precisão.</p>
+     
+          </article>
+  
+    <br>
+    
+  </main>
+
+  <footer class="bg-light text-center">
+    <div class="container">
+      <ul class="list-inline">
+        <li class="list-inline-item"><a href="/sobre.html" class="popup-link" data-popup="#aboutPopup">💡 Sobre nós</a></li>
+        <li class="list-inline-item"><a href="/contato.html" class="popup-link" data-popup="#contactPopup">📞 Contate-nos</a></li>
+        <li class="list-inline-item"><a href="/politica-de-privacidade.html" class="popup-link" data-popup="#pagesPopup">📚 Política de privacidade</a></li>
+        <li class="list-inline-item"><a href="/disclaimer.html" class="popup-link" data-popup="#toolsPopup">🛠️ Aviso legal</a></li>
+      </ul>
+      <p>Crédito <strong><a class="coryright" href="https://www.youtube.com/@copiares">Copiares</a></strong></p>
+    </div>
+  </footer>
+ 
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="script.js"></script>
+
+</body>
+</html>

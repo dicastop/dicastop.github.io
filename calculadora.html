@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3505973440385868"
+    crossorigin="anonymous"></script>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="google-adsense-account" content="ca-pub-3505973440385868">
+        <meta name="robots" content="noindex, nofollow, noimageindex, noarchive, nosnippet">
+        <meta name="description" content="Calculadora">
+        <meta name="keywords" content="Calculadora, matematica">
+        <link rel="icon" type="image/png" href="web-development.png">
+        <title>Calculadora</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+ 
+
+        <style>
+          /* Estilos para a calculadora */
+.custom-container {
+  margin: 20px auto;
+  padding: 20px;
+  max-width: 400px;
+  background-color: #f4f4f4;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.custom-content {
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #333;
+}
+
+h2 {
+  margin-top: 30px;
+  margin-bottom: 10px;
+  font-size: 20px;
+  color: #333;
+}
+
+button {
+  margin: 5px;
+  padding: 10px 20px;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  background-color: #ffbd07;
+  color: #333;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #ffc107;
+}
+
+input[type="text"] {
+  width: calc(100% - 20px);
+  margin: 5px 0;
+  padding: 10px;
+  font-size: 18px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+input[type="text"]:read-only {
+  background-color: #eee;
+  cursor: not-allowed;
+}
+
+        </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="container-fluid">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#"><img style="width: 45px;" src="web-development.png" alt="Logo"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Alternar navegação">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item"><a style="color: #000;" class="nav-link" href="/">🏠 Início</a></li>
+            <li class="nav-item"><a style="color: #000;" href="https://copiares.com" title="copiar" class="nav-link" >📒 Blog</a></li>
+            <li class="nav-item"><a style="color: #000;"  href="/sobre.html" class="nav-link popup-link" data-popup="#aboutPopup">💡 Sobre nós</a></li>
+            <li class="nav-item"><a style="color: #000;" href="/contato.html" class="nav-link popup-link" data-popup="#contactPopup">📞 Contate-nos</a></li>
+            <li class="nav-item"><a style="color: #000;" href="/politica-de-privacidade.html" class="nav-link popup-link" data-popup="#pagesPopup">📚 Política de privacidade</a></li>
+            <li class="nav-item"><a style="color: #000;" href="/disclaimer.html" class="nav-link popup-link" data-popup="#toolsPopup">🛠️ Aviso legal</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+
+  <main>
+    <div class="container">
+      <div class="custom-container">
+        <div class="custom-content">
+          <h1>Calculadora</h1>
+          <input type="text" id="display" readonly>
+          <br>
+          <button onclick="appendToDisplay('1')">1</button>
+          <button onclick="appendToDisplay('2')">2</button>
+          <button onclick="appendToDisplay('3')">3</button>
+          <button onclick="appendToDisplay('+')">+</button>
+          <br>
+          <button onclick="appendToDisplay('4')">4</button>
+          <button onclick="appendToDisplay('5')">5</button>
+          <button onclick="appendToDisplay('6')">6</button>
+          <button onclick="appendToDisplay('-')">-</button>
+          <br>
+          <button onclick="appendToDisplay('7')">7</button>
+          <button onclick="appendToDisplay('8')">8</button>
+          <button onclick="appendToDisplay('9')">9</button>
+          <button onclick="appendToDisplay('*')">*</button>
+          <br>
+          <button onclick="appendToDisplay('0')">0</button>
+          <button onclick="appendToDisplay('.')">.</button>
+          <button onclick="calculate()">=</button>
+          <button onclick="appendToDisplay('/')">/</button>
+          <br>
+          <button onclick="clearDisplay()">C</button>
+        </div>
+      </div>
+      
+    <br>
+    <article class="container">
+        <center>  <h2>Descrição do Editor de Texto - Localizar e Substituir</h2></center>
+        
+      
+        
+        <center><h2>Descrição da Calculadora</h2></center>
+        <p>A Calculadora é uma ferramenta simples para realizar operações matemáticas básicas. Com esta calculadora, os usuários podem realizar adições, subtrações, multiplicações e divisões de forma rápida e conveniente.</p>
+        <p>Recursos Principais:</p>
+        <ul>
+          <li><strong>Operações Básicas:</strong> A calculadora suporta as quatro operações básicas da matemática: adição (+), subtração (-), multiplicação (*) e divisão (/).</li>
+          <li><strong>Interface Intuitiva:</strong> Os botões numerados e de operadores facilitam o uso da calculadora, mesmo para usuários iniciantes.</li>
+          <li><strong>Cálculos Precisos:</strong> A calculadora realiza cálculos precisos e exibe resultados instantaneamente no visor.</li>
+          <li><strong>Limpeza Rápida:</strong> Um botão de limpeza permite apagar rapidamente o conteúdo do visor para realizar novos cálculos.</li>
+        </ul>
+        <p>Utilize a Calculadora para resolver problemas matemáticos cotidianos, fazer cálculos rápidos e realizar tarefas de contabilidade de forma eficiente.</p>
+     
+          </article>
+  
+    <br>
+    
+  </main>
+
+  <footer class="bg-light text-center">
+    <div class="container">
+      <ul class="list-inline">
+        <li class="list-inline-item"><a href="/sobre.html" class="popup-link" data-popup="#aboutPopup">💡 Sobre nós</a></li>
+        <li class="list-inline-item"><a href="/contato.html" class="popup-link" data-popup="#contactPopup">📞 Contate-nos</a></li>
+        <li class="list-inline-item"><a href="/politica-de-privacidade.html" class="popup-link" data-popup="#pagesPopup">📚 Política de privacidade</a></li>
+        <li class="list-inline-item"><a href="/disclaimer.html" class="popup-link" data-popup="#toolsPopup">🛠️ Aviso legal</a></li>
+      </ul>
+      <p>Crédito <strong><a class="coryright" href="https://www.youtube.com/@copiares">Copiares</a></strong></p>
+    </div>
+  </footer>
+ 
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="script.js"></script>
+
+</body>
+</html>

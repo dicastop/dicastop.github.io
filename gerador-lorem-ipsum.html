@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3505973440385868"
+    crossorigin="anonymous"></script>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="google-adsense-account" content="ca-pub-3505973440385868">
+        <meta name="robots" content="noindex, nofollow, noimageindex, noarchive, nosnippet">
+        <meta name="description" content="Gerador de lorem ipsum.">
+        <meta name="keywords" content="Gerador de lorem ipsum">
+        <link rel="icon" type="image/png" href="web-development.png">
+        <title>Gerador de lorem ipsum</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+ 
+</head>
+
+<body>
+
+  <header>
+    <div class="container-fluid">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#"><img style="width: 45px;" src="web-development.png" alt="Logo"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Alternar navegação">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item"><a style="color: #000;" class="nav-link" href="/">🏠 Início</a></li>
+            <li class="nav-item"><a style="color: #000;" href="https://copiares.com" title="copiar" class="nav-link" >📒 Blog</a></li>
+            <li class="nav-item"><a style="color: #000;"  href="/sobre.html" class="nav-link popup-link" data-popup="#aboutPopup">💡 Sobre nós</a></li>
+            <li class="nav-item"><a style="color: #000;" href="/contato.html" class="nav-link popup-link" data-popup="#contactPopup">📞 Contate-nos</a></li>
+            <li class="nav-item"><a style="color: #000;" href="/politica-de-privacidade.html" class="nav-link popup-link" data-popup="#pagesPopup">📚 Política de privacidade</a></li>
+            <li class="nav-item"><a style="color: #000;" href="/disclaimer.html" class="nav-link popup-link" data-popup="#toolsPopup">🛠️ Aviso legal</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+
+  <main>
+    <div class="container">
+      <div class="custom-container">
+        <div class="custom-content">
+          <h1>Gerador de Lorem Ipsum</h1>
+          <p>Quantidade de Parágrafos:</p>
+          <input type="number" id="paragraphs" min="1" value="3">
+          <br>
+          <button onclick="generateLoremIpsum()">Gerar Lorem Ipsum</button>
+          <br>
+          <div id="result" style="margin-top: 20px;"></div>
+        </div>
+      </div>
+    
+      
+    <br>
+    <article class="container">
+        <center> <h2>Descrição do Gerador de Lorem Ipsum</h2></center>
+        
+       
+        <p>O Gerador de Lorem Ipsum é uma ferramenta útil para criar texto fictício que simula o aspecto visual de um documento real. O Lorem Ipsum é amplamente utilizado na indústria de design gráfico, web design, editoração e tipografia como um espaço reservado para o layout do texto antes do conteúdo final ser disponibilizado.</p>
+        <p>Recursos Principais:</p>
+        <ul>
+          <li><strong>Fácil de Usar:</strong> Basta especificar a quantidade de parágrafos desejada e clicar no botão "Gerar Lorem Ipsum" para obter texto fictício instantaneamente.</li>
+          <li><strong>Flexibilidade:</strong> O gerador permite ajustar o número de parágrafos conforme necessário, tornando-o adequado para diversos projetos e finalidades.</li>
+          <li><strong>Texto Padrão:</strong> O Lorem Ipsum gerado segue um texto padrão em latim, que simula a estrutura e distribuição de palavras em um texto real.</li>
+        </ul>
+        <p>Utilize o Gerador de Lorem Ipsum para preencher layouts, protótipos, maquetes e outros projetos com texto fictício de forma rápida e eficiente, facilitando o processo de design e desenvolvimento.</p>
+     
+          </article>
+  
+    <br>
+    
+  </main>
+
+  <footer class="bg-light text-center">
+    <div class="container">
+      <ul class="list-inline">
+        <li class="list-inline-item"><a href="/sobre.html" class="popup-link" data-popup="#aboutPopup">💡 Sobre nós</a></li>
+        <li class="list-inline-item"><a href="/contato.html" class="popup-link" data-popup="#contactPopup">📞 Contate-nos</a></li>
+        <li class="list-inline-item"><a href="/politica-de-privacidade.html" class="popup-link" data-popup="#pagesPopup">📚 Política de privacidade</a></li>
+        <li class="list-inline-item"><a href="/disclaimer.html" class="popup-link" data-popup="#toolsPopup">🛠️ Aviso legal</a></li>
+      </ul>
+      <p>Crédito <strong><a class="coryright" href="https://www.youtube.com/@copiares">Copiares</a></strong></p>
+    </div>
+  </footer>
+ 
+ 
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="script.js"></script>
+
+</body>
+</html>
