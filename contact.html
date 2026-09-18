@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="robots" content="index, follow">
-    <meta name="description" content="Contato - Receita de Mais">
+    <meta name="description" content="Fale com a equipe do Receita de Mais para dúvidas, sugestões de jogos, correções ou solicitações de remoção de conteúdo.">
     <meta name="google-adsense-account" content="ca-pub-5603895600024124">
     <link rel="canonical" href="https://receitademais.com/contact.html">
     <link rel="stylesheet" href="/src/css/style.css">
@@ -15,12 +15,43 @@
     <p><a href="/">Voltar para Receita de Mais</a></p>
     <h1>Contato</h1>
 
-    
-    <p>Para dúvidas, correções, questões de privacidade ou solicitações relacionadas a direitos autorais, escreva para <a href="mailto:icopiare@example.com">icopiare@example.com</a>.</p>
-    <p>Identificação do responsável: Thazitta.</p>
-    
+    <p>Tem alguma dúvida, encontrou um jogo com problema ou quer sugerir um título para o catálogo? Preencha o formulário abaixo e a gente responde assim que possível. Também recebemos aqui pedidos de correção de informações e solicitações relacionadas a direitos autorais.</p>
 
-    <p>Última atualização: 2026-08-23</p>
+    <div class="contact-card">
+        <form action="https://formsubmit.co/icopiare@gmail.com" method="POST" class="contact-form">
+            <input type="hidden" name="_subject" value="Nova mensagem pelo site Receita de Mais">
+            <input type="hidden" name="_template" value="table">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_next" value="https://receitademais.com/obrigado.html">
+            <input type="text" name="_honey" class="honeypot-field" tabindex="-1" autocomplete="off">
+
+            <div class="form-group">
+                <label for="contact-name">Nome</label>
+                <input type="text" id="contact-name" name="name" required placeholder="Como podemos te chamar?" class="form-input">
+            </div>
+
+            <div class="form-group">
+                <label for="contact-email">E-mail</label>
+                <input type="email" id="contact-email" name="email" required placeholder="seuemail@exemplo.com" class="form-input">
+            </div>
+
+            <div class="form-group">
+                <label for="contact-subject">Assunto</label>
+                <input type="text" id="contact-subject" name="subject" placeholder="Sobre o que você quer falar?" class="form-input">
+            </div>
+
+            <div class="form-group">
+                <label for="contact-message">Mensagem</label>
+                <textarea id="contact-message" name="message" required placeholder="Escreva sua mensagem com o máximo de detalhes possível." class="form-textarea"></textarea>
+            </div>
+
+            <button type="submit" class="button form-button">Enviar mensagem</button>
+        </form>
+    </div>
+
+    <p class="contact-alt">Prefere escrever direto? Manda um e-mail para <a href="mailto:icopiare@gmail.com">icopiare@gmail.com</a>.</p>
+
+    <p class="updated-at">Última atualização: 2026-09-18</p>
 </main>
 <footer class="footer-copyright"><div class="container"><a href="/about.html">Sobre</a> · <a href="/contact.html">Contato</a> · <a href="/dmca.html">DMCA</a> · <a href="/privacy.html">Privacidade</a> · <a href="/terms.html">Termos</a> · <a href="/cookies.html">Cookies</a></div></footer>
 </body>
